@@ -14,7 +14,7 @@ public class MainServlet extends HttpServlet {
   public static final String PATH = "/api/posts";
   public static final String PATH_WITH_QUERY = "/api/posts/\\d+";
   public static final String STR = "/";
-      private PostController controller;
+  private PostController controller;
 
   @Override
   public void init() {
@@ -61,7 +61,7 @@ public class MainServlet extends HttpServlet {
   }
 
   private long parseId(String path) {
-          return Long.parseLong(path.substring(path.lastIndexOf(STR) + 1));
+    return Long.parseLong(path.substring(path.lastIndexOf(STR) + 1));
   }
 }
 
